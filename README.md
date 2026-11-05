@@ -172,9 +172,11 @@ El resultado principal del proyecto se resume en la comparación de las respuest
 .
 ├── README.md                                  # Este archivo
 ├── AlvarezC22211520.mlx                       # Cuaderno computacional de MATLAB (Live Script)
+├── AlvarezC22211520.pdf                       # Cuaderno computacional de MATLAB en PDF
 ├── AlvarezC22211520.py                        # Implementación en Python
-├── SistemaMusculoesqueletico.slx              # Modelo de Simulink
+├── SistemaP3.slx                              # Modelo de Simulink
 ├── Analisis_Matematico.pdf                    # Apuntes del análisis algebraico e integro-diferencial
+├── Parametros_Controlador.pdf                 # Parámetros del controlador PID
 ├── Diagrama_BioRender.pdf                     # Diagrama fisiológico del sistema
 ├── Caso_matlab.pdf                            # Gráfica de resultados exportada desde MATLAB
 └── Caso_python.pdf                            # Gráfica de resultados exportada desde Python
