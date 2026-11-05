@@ -1,0 +1,29 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Practica 3: Modelado y Control del sistema
+  Musculoesqueletico
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Gabriela Gissele
+    family-names: Alvarez Garcia
+    email: c22211520@tectijuana.edu.mx
+    affiliation: TECNM / IT Tijuana
+repository-code: 'https://github.com/c22211520-Alvarez/MSFP3'
+keywords:
+  - Sistema musculoesquelético
+  - Analogía fuerza-voltaje
+  - Modelo viscoelástico
+  - Atrofia muscular
+  - Controlador PI
+  - Simscape Electrical
+  - Python
+  - BioRender
+license: BSD-2-Clause
+version: '1.0'
+date-released: '2026-11-04'
