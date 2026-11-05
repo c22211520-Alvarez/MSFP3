@@ -127,6 +127,66 @@ $$
 
 Sustituyendo $X(s)$ en la ecuación de $F_s(s)$ y simplificando, se obtiene la función de transferencia de lazo abierto que relaciona el desplazamiento con la fuerza aplicada. Esta ecuación se implementa directamente mediante el método de Euler en el Live Script para su simulación numérica.
 
+
+
+## Formulación matemática y Procedimiento Algebraico
+
+El modelo dinámico del sistema musculoesquelético se puede abordar desde dos perspectivas equivalentes. Primero, se presenta el sistema de ecuaciones integro-diferenciales que rige el comportamiento interno del circuito, y posteriormente se muestra el procedimiento algebraico simplificado para obtener la función de transferencia de entrada-salida.
+
+### 1. Ecuaciones integro-diferenciales del sistema
+
+A partir del análisis del circuito equivalente y aplicando las leyes de Kirchhoff, se obtiene el siguiente sistema de ecuaciones que describe la dinámica del sistema:
+
+**Ecuación diferencial del desplazamiento:**
+$$
+\frac{dx(t)}{dt} = -\frac{x(t)}{R(C_p + C_s)} + \frac{F(t)}{R(C_p + C_s)}
+$$
+
+**Ecuación de la fuerza de salida:**
+$$
+F_s(t) = \frac{C_s}{C_p + C_s}F(t) + x(t)\left(1 - \alpha - \frac{C_s}{C_p + C_s}\right)
+$$
+
+### 2. Simplificación y Procedimiento Algebraico para la Función de Transferencia
+
+Si analizamos el circuito desde la malla simplificada (donde los capacitores $C_s$ y $C_p$ se agrupan), y aplicando la Ley de Voltajes de Kirchhoff (LVK), obtenemos la siguiente ecuación diferencial:
+
+$$
+R \frac{dx(t)}{dt} + \frac{x(t)}{C_s + C_p} = F(t) - F_0(t)
+$$
+
+Sabiendo que la fuerza del elemento contráctil está dada por $F_0(t) = \alpha F(t)$, la ecuación se reescribe como:
+
+$$
+R \frac{dx(t)}{dt} + \frac{x(t)}{C_s + C_p} = F(t)(1 - \alpha)
+$$
+
+Aplicamos la Transformada de Laplace a la ecuación diferencial, considerando condiciones iniciales nulas:
+
+$$
+R s X(s) + \frac{X(s)}{C_s + C_p} = F(s)(1 - \alpha)
+$$
+
+Factorizamos $X(s)$:
+
+$$
+X(s) \left[ R s + \frac{1}{C_s + C_p} \right] = F(s)(1 - \alpha)
+$$
+
+Multiplicamos toda la ecuación por $(C_s + C_p)$ para eliminar la fracción:
+
+$$
+X(s) \left[ R(C_s + C_p)s + 1 \right] = F(s)(C_s + C_p)(1 - \alpha)
+$$
+
+Finalmente, despejamos la relación entre la salida y la entrada, obteniendo la función de transferencia del sistema (Lazo Abierto):
+
+$$
+G(s) = \frac{X(s)}{F(s)} = \frac{(C_s + C_p)(1 - \alpha)}{R(C_s + C_p)s + 1}
+$$
+
+Esta ecuación final es la que se implementa directamente mediante el bloque de función de transferencia en Simulink y mediante el código de Python para su simulación numérica.
+
 [Volver al contenido](#contenido)
 
 ---
