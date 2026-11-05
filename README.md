@@ -10,12 +10,10 @@ El caso de estudio representa la dinámica viscoelástica de un músculo mediant
 **Institución:** Tecnológico Nacional de México / Instituto Tecnológico de Tijuana  
 **Asignatura:** Modelado de Sistemas Fisiológicos  
 **Programa:** Ingeniería Biomédica  
+**Estudiante:** Gabriela Gissele Alvarez Garcia · C22211520 · c22211520@tijuana.tecnm.mx
 
-**Estudiante:** Gabriela Gissele Alvarez Garcia 
-**Número de control:** C22211520
-**Correo institucional:** c22211520@tectijuana.edu.mx
-
-**Repositorio de la asignatura:** https://github.com/DrPaulValle/MSF-IBF1020  
+**Repositorio de la asignatura:** https://github.com/DrPaulValle/MSF-IBF1020
+**Sede:** Blvd. Alberto Limón Padilla s/n, Tijuana, C. P. 22454, B. C., México.
 
 ---
 
